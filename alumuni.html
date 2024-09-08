@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Portal</title>
+    <link rel="stylesheet" href="alumuni.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Alumni Portal</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News & Events</a></li>
+                <li><a href="#search">Search Alumni</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Alumni Portal</h2>
+        <p>Stay connected with your fellow alumni and get updates on the latest news and events.</p>
+    </section>
+
+    <section id="news">
+        <h2>News & Events</h2>
+        <div class="events">
+            <div class="event">
+                <h3>Annual Alumni Meet</h3>
+                <p>Date: December 20, 2024</p>
+                <p>Location: University Auditorium</p>
+            </div>
+            <div class="event">
+                <h3>Webinar on Career Development</h3>
+                <p>Date: October 15, 2024</p>
+                <p>Location: Online</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="search">
+        <h2>Search Alumni</h2>
+        <input type="text" id="searchInput" placeholder="Search by name or year">
+        <button onclick="searchAlumni()">Search</button>
+        <div id="searchResults"></div>
+    </section>
+
+    <section id="profile">
+        <h2>Profile</h2>
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <label for="year">Graduation Year:</label>
+            <input type="text" id="year" placeholder="Year of Graduation">
+            <button type="submit">Update Profile</button>
+        </form>
+        <p id="profileUpdateMessage"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alumni Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="alumuni.js"></script>
+</body>
+</html>
