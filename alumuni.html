@@ -9,9 +9,9 @@
 <body>
     <header>
         <div class="logo">
-            <img src="alumni.jpg" style="height:20%; width:20% ;border-radius:50% ; padding-top: 1em;">
+            <img src="alumni (1).jpg" style="height:20%; width:20% ;border-radius:50% ; padding-top: 1em;">
             <h1>Alumni Portal</h1>
-            <marquee behavior="scrollable" direction="left" >
+            <marquee behavior="scrollable" direction="left" style="color: blue;" >
                 Connecting Memories, Building Futures | Stay Connected, Stay Inspired | Your Journey Continues Here
             </marquee>
             
@@ -27,8 +27,11 @@
     </header>
 
     <section id="home">
-        <h2>Welcome to the Alumni Portal</h2>
-        <p>Stay connected with your fellow alumni and get updates on the latest news and events.</p>
+        <div class="home-content">
+            <h2>!!Welcome!!</h2>
+            <p>Stay connected with your fellow alumni and get updates on the latest news and events. We’re excited to have you here and look forward to fostering a vibrant community.</p>
+            <a href="#events" class="cta-button">Explore Upcoming Events</a>
+        </div>
     </section>
 
     <section id="news">
@@ -49,22 +52,25 @@
 
     <section id="search">
         <h2>Search Alumni</h2>
-        <input type="text" id="searchInput" placeholder="Search by name or year">
+        <input type="text" id="searchInput" placeholder="Search by name or year or location">
         <button onclick="searchAlumni()">Search</button>
         <div id="searchResults"></div>
     </section>
 
     <section id="profile">
         <h2>Profile</h2>
-        <form id="profileForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your Name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Your Email">
-            <label for="year">Graduation Year:</label>
-            <input type="text" id="year" placeholder="Year of Graduation">
-            <button type="submit">Update Profile</button>
+        <form id="profileForm" onsubmit="updateProfile(event)">
+            <label for="name">Name :</label>
+            <input type="text" id="name" placeholder="Your Name" width="50vw"><br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Your Email"><br>
+            <label for="year">Graduation Year :</label>
+            <input type="text" id="year" placeholder="Year of Graduation"><br>
+            <label for="year">Location:</label>
+            <input type="text" id="Location" placeholder="Native Location"><br>
+            <button type="submit" >Update Profile</button>
         </form>
+        
         <p id="profileUpdateMessage"></p>
     </section>
 
