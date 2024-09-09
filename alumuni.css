@@ -1,53 +1,104 @@
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 50;
+    padding: 50;
     background-color:black;
 }
 
 header {
-    background-color:black;
-    color: yellow;
-    padding: 10dp;
-    /* padding: 1em; */
+    background-color: black;
+    color: red;
+    position: relative;
     text-align: center;
+    background-image: url(""); /* Add the image URL */
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Ensures the full image is visible */
+    background-position: center; /* Centers the image within the header */
+    height: 300px; /* Adjusts the height of the header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/* Additional styling for header content */
+ header .logo {
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: adds a semi-transparent background for text readability */
+    padding: 10px;
+    border-radius: 5px;
+} 
+#home {
+    background-color: #f4f4f9;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 30px;
+}
 
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-header .logo {
-    
-    font-size: 20px;
+h2 {
+    color:black;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    font-size:24px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between nav items */
 }
 
 nav ul li a {
-    color: white;
+    color: grey;
     text-decoration: none;
 }
+
 
 section {
     padding: 20px;
     margin: 20px;
     background-color: white;
-    border-radius: 5px;
 }
 
 input, button {
     padding: 10px;
     margin: 5px;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
 .events {
@@ -67,4 +118,106 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#profile form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect */
+#profile form:hover {
+    background-color:#EF7674; /* Light background color on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+#profile input,
+#profile button {
+    width: 70%;
+    margin: 5px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#profile button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#profile button:hover {
+    background-color: darkred;
+}
+
+#search button {
+    padding: 4px 8px; /* Smaller padding for a more compact size */
+    display: inline-flex; /* Use inline-flex to prevent the button from expanding */
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; /* Small font size */
+    width: 80px; /* Fixed width */
+    height: 30px; /* Fixed height */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    margin: 0; /* Remove any margin that could affect size */
+}
+
+
+
+
+/* Search form styling with a centered, lighter background */
+#search > div {
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background with 80% opacity */
+    padding: 20px;
+    border-radius: 8px; /* Optional: rounds the corners of the div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+    width: 50%;
+    max-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#search input,
+#search button {
+    width: 50%; 
+    margin: 5px 0;
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+#search button {
+    background-color:#58BC82;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 2px 4px; /* Reduced padding for a smaller button */
+    font-size: 12px; /* Small font size */
+    width: 80px; /* Set a smaller fixed width */
+    height: 35px; /* Set a smaller fixed height */
+    display: inline-block; /* Prevents button from expanding */
+    box-sizing: border-box; /* Includes padding in width/height */
+}
+
+
+#search button:hover {
+    background-color: darkred;
 }
