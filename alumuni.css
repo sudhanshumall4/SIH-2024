@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 50;
     padding: 50;
-    background-color:black;
+    background-color:rgb(45, 44, 44);
 }
 
 header {
@@ -15,7 +15,6 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Ensures the full image is visible */
     background-position: center; /* Centers the image within the header */
-    height: 300px; /* Adjusts the height of the header */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,13 +46,16 @@ header {
 h2 {
     color:black;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    text-align: center; /* Center aligns the heading text */
+    margin-bottom: 20px; /* Adds some space between the heading and the content */
+ 
 }
 
 p {
     color: #555;
     font-size: 1.2em;
     margin-bottom: 30px;
+
 }
 
 .cta-button {
@@ -74,14 +76,14 @@ p {
 nav ul {
     list-style: none;
     padding: 0;
-    font-size: 24px;
+    font-size: 26px;
     display: flex;
     justify-content: center;
     gap: 20px; /* Adds space between nav items */
 }
 
 nav ul li a {
-    color: grey;
+    color: rgb(219, 17, 17);
     text-decoration: none;
 }
 
@@ -101,21 +103,11 @@ input, button {
     align-items: center;
 }
 
-.events {
-    display: flex;
-    flex-direction: column;
-}
-
-.event {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-}
 
 footer {
     text-align: center;
     background-color:black;
-    color: white;
-    position: fixed;
+    color: rgb(255, 255, 255);
     width: 100%;
     bottom: 0;
 }
@@ -221,3 +213,136 @@ footer {
 #search button:hover {
     background-color: darkred;
 }
+
+
+
+/* news */
+
+
+#news {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center aligns all content, including the heading */
+  }
+  
+  
+  
+  .events {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:center /* Centers the text in the middle horizontally */
+  }
+  
+  .event {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  
+  .event-text {
+    text-align: center;
+  }
+  
+  .section-container {
+    display: flex;
+    justify-content: center; /* Centers the text and image as a block */
+    align-items: center;
+  }
+  
+  .section-container img {
+    max-width: 300px; /* Adjust the size of the image */
+    margin-left: 50px; /* Keeps a small gap between text and image */
+  }
+  
+
+  /* animation */
+
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #121317;
+  }
+  .wrapper {
+    position: relative;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .container {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #000000f7;
+    border-bottom: 10px solid #29b3d2;
+  }
+  .container:hover{
+    background-color: #000000;
+  }
+  i {
+    color: #3a4a42;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  span.num {
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+  }
+  span.text {
+    color:#29b3d2 ;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em ;
+    font-weight: 400;
+    line-height: 0;
+  }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      width: 85vw;
+    }
+    .container {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .container {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .wrapper {
+      gap: 15px;
+    }
+    .container {
+      width: 100%;
+      height: 25vmin;
+      font-size: 8px;
+    }
+  }
