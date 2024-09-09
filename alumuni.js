@@ -98,3 +98,4 @@ function searchAlumni() {
 
 // // Load profile data when the page loads
 // window.onload = loadProfileData;
+
